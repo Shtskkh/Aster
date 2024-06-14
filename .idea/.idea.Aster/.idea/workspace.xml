@@ -7,7 +7,8 @@
     <list default="true" id="360ce5d3-2fc2-4ac9-9a3b-fe47eb85cb4a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Aster/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Aster/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/project.godot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/ui/Settings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/ui/Settings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/views/Level_1.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/views/Level_1.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scenes/views/SettingsView.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/scenes/views/SettingsView.tscn" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +102,9 @@
       <workItem from="1718339184409" duration="42000" />
       <workItem from="1718339247225" duration="847000" />
       <workItem from="1718340336355" duration="2296000" />
-      <workItem from="1718343007816" duration="173000" />
+      <workItem from="1718343007816" duration="209000" />
+      <workItem from="1718373124344" duration="318000" />
+      <workItem from="1718373485429" duration="114000" />
     </task>
     <servers />
   </component>
