@@ -7,6 +7,7 @@ public partial class Settings : Control
     private Dictionary _videoSettings;
     private CheckBox _fullscreen;
     private OptionButton _resButton;
+    private Window _window;
 
     private Dictionary<string, Vector2I> _resolutions = new Dictionary<string, Vector2I>
     {
@@ -17,7 +18,8 @@ public partial class Settings : Control
         {"3840x2160", new Vector2I(3840,2160)}
     };
     public override void _Ready()
-    { 
+    {
+        _window = GetWindow();
         _videoSettings = _config.GetSectionSettings("video");
         _fullscreen = GetNode<CheckBox>("VBoxContainer/FullScreen/FullScreenCheckBox");
         _resButton = GetNode<OptionButton>("VBoxContainer/Res/Resolutions");
@@ -29,7 +31,7 @@ public partial class Settings : Control
     private void _on_full_screen_check_box_toggled(bool toggledOn)
     {
         _config.ChangeSetting("video", "fullscreen", toggledOn);
-        GetWindow().Mode = toggledOn ? Window.ModeEnum.ExclusiveFullscreen : Window.ModeEnum.Windowed;
+        _window.Mode = toggledOn ? Window.ModeEnum.ExclusiveFullscreen : Window.ModeEnum.Windowed;
     }
 
     private void _AddResolutions()
@@ -49,5 +51,8 @@ public partial class Settings : Control
     {
         var resString = _resButton.GetItemText(index);
         var res = _resolutions[resString];
+        _window.Size = res;
+        _window.MoveToCenter();
     }
+    
 }
