@@ -31,7 +31,7 @@ layout_mode = 2
 theme = ExtResource("1_nik5d")
 text = "Начать"
 script = ExtResource("1_53dog")
-GameScene = "res://scenes/views/level_1.tscn"
+GameScene = "res://scenes/views/Level_1.tscn"
 
 [node name="Settings" type="Button" parent="VBoxContainer"]
 layout_mode = 2

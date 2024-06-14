@@ -4,7 +4,7 @@ using Godot.Collections;
 public partial class ConfigHandler : Node
 {
     private ConfigFile _config = new ConfigFile();
-    private const string ConfigPath = "res://settings.ini";
+    private const string ConfigPath = "user://settings.ini";
 
     public override void _Ready()
     {

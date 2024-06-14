@@ -1,6 +1,6 @@
 [gd_scene load_steps=21 format=3 uid="uid://dubxhvghj7gf7"]
 
-[ext_resource type="Script" path="res://scripts/entities/Enemy.gd" id="1_tpouh"]
+[ext_resource type="Script" path="res://scripts/entities/Enemy.cs" id="1_d0mf8"]
 [ext_resource type="Texture2D" uid="uid://3i4ljvwdfekg" path="res://assets/entity_sprites/slime.png" id="2_7v6mc"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mt0db"]
@@ -134,13 +134,13 @@ radius = 37.6563
 
 [node name="enemy" type="CharacterBody2D"]
 position = Vector2(218, 143)
-script = ExtResource("1_tpouh")
+script = ExtResource("1_d0mf8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_qnrjo")
 animation = &"walk"
-frame_progress = 0.388329
+frame_progress = 0.957487
 offset = Vector2(0, -8)
 
 [node name="Area2D" type="Area2D" parent="."]
